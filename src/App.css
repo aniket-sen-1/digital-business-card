@@ -1,38 +1,182 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(80, 147, 226, 1);
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  max-width: 550px;
+  min-width: 339px;
+  margin: 0px auto;
+  /*   padding:44px 116px; */
+  background-color: rgba(35, 37, 44, 0.5);
+  /*   border:#533636 4px solid; */
+  overflow: auto;
+  border-radius: 8px;
+}
+
+.info {
+  width: 317px;
+  margin: 44px auto 0px auto;
+  border-radius: 5px 5px 0px 0px;
+}
+.about,
+.interests,
+.footer {
+  width: 317px;
+  margin: 0 auto;
+}
+
+.info--image {
+  width: 317px;
+  height: 317px;
+  background-image: url("../public/images/profile.png");
+  background-size: 317px 317px;
+  background-position: 40% 7%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.info {
+  background-color: rgba(26, 27, 33, 1);
+}
+.info--name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
   text-align: center;
+  color: white;
+  margin-top: 21px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info--role {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+  color: #f3bf99;
+  margin-top: 6.1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info--website {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  text-align: center;
+  color: #fffafa;
+  margin-top: 8.81px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info--buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin: 15px 35px 0px 35px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info--buttons .button {
+  border-radius: 4px;
+  height: 32px;
+  width: 115px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding: 9px 0;
+}
+.buttons--right .button {
+  background-color: rgba(80, 147, 226, 1);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons--left .button {
+  background-color: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-icon {
+  display: inline-block;
+  padding-right: 7px;
+}
+
+.about {
+  padding-top: 33px;
+  padding-bottom: 27px;
+  background-color: rgba(26, 27, 33, 1);
+}
+
+.about--heading {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  color: #f5f5f5;
+  margin: 0 35px;
+}
+
+.about--text {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 17px;
+  color: #dcdcdc;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 6px;
+}
+
+.interests {
+  /*   padding-top:33px; */
+  padding-bottom: 27px;
+  background-color: rgba(26, 27, 33, 1);
+}
+
+.interests--heading {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  color: #f5f5f5;
+  margin: 0 35px;
+}
+
+.interests--text {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 17px;
+  color: #dcdcdc;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  color: rgba(145, 142, 155, 1);
+  background: rgba(22, 22, 25, 1);
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 44px;
+}
+
+.github,
+.twitter,
+.instagram,
+.facebook {
+  padding: 19px 13.5px;
+}
+
+.footer span * {
+  color: #908e9b;
 }
